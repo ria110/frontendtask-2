@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="c:\Users\Ria\Downloads\player_icon5.png c:\Users\Ria\Downloads\player_icon4.png c:\Users\Ria\Downloads\player_icon3.png c:\Users\Ria\Downloads\player_icon2.png c:\Users\Ria\Downloads\player_icon1.png c:\Users\Ria\Downloads\play_musicbar.png c:\Users\Ria\Downloads\logo.png c:\Users\Ria\Downloads\library_icon.png c:\Users\Ria\Downloads\forward_icon.png c:\Users\Ria\Downloads\card6img.jpeg c:\Users\Ria\Downloads\card5img.jpeg c:\Users\Ria\Downloads\card4img.jpeg c:\Users\Ria\Downloads\card3img.jpeg c:\Users\Ria\Downloads\card2img.jpeg c:\Users\Ria\Downloads\card1img.jpeg c:\Users\Ria\Downloads\backward_icon.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/90eaed9be9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                    <img src="library_icon.png">
+                    <a href="#">Your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="badge rounded-pill">Artists</button>
+                    <button class="badge rounded-pill">Playlists</button>
+                    <button class="badge rounded-pill">Podcasts & shows</button>
+                </div>
+                <div class="menu-options">
+                    <div class="ops">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="ops">
+                        <span>Recent</span>
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    
+                </div>
+                <div class="cont">
+                    <div class="songs">
+                        <img src="liked.jpg">
+                        <span>Liked Songs
+                        <p>Spotify</p></span>
+                       
+                    </div>
+                    <div class="songs">
+                        <img src="time.jpg">
+                        <span>Your Time Capsule
+                            <p>Spotify</p>
+                        </span>
+                       
+                    </div>
+                    <div class="songs">
+                        <img src="daylist.jpg">
+                        <span>fraternity baller rollerskati...
+                            <p>Spotify</p>
+                        </span>
+                    </div>
+                    <div class="songs">
+                        <img src="kdot.jpg">
+                        <span>hiphOp
+                            <p>ria</p>
+                        </span>
+                    </div>
+
+                    </div>
+
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-arrows">
+                    <img src="backward_icon.png">
+                    <img src="forward_icon.png"  class="hide"> 
+                </div>
+                <div class="sticky-nav-ops">
+                 <button class="badge">
+                    <i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>
+                    <b>Install App</b>
+                 </button>
+                    <button class="badge rounded-pill nav-item"><i class="fa-regular fa-bell"></i></button>
+                    <button class="badge rounded-pill nav-item"><i class="fa-regular fa-user"></i></button>
+                </div>
+            </div>
+            <div class="playlisthead">
+                <img src="playlistcover.jpg">
+                <div class="deets">
+                    <span>
+                        <p>Public playlist</p>
+                        <h1>JULY 2024</h1>
+                        <p><b>ria</b> • 3 saves • 69 songs, 3 hr 58 min</p>
+                    </span>
+                </div>
+            </div>
+           
+            <div class="playlistcontrol">
+                <div class="left">
+                    <img id="greenplay" src="play_musicbar.jpg">
+                    
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-regular fa-circle-down"></i>
+                        <i class="fa-solid fa-user-plus"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
+                  </div>  
+                <div class="right">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Custum order</p>
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+            <div class="songslist">
+                <div class="number"><p>#</p></div>
+                <div class="songname"><p>Title</p></div>
+                <div class="singer"><p>Album</p></div>
+                <div class="dateadded"><p>Date added</p></div>
+                
+                <div class="time"><i class="fa-regular fa-clock"></i></div>
+            </div>
+            <div class="songslist" data-src="1.mp3" id="0" data-title="No Role Modelz" data-artist="J Cole" data-album-art="norolemodels.jpg">
+                <div class="number"><p>1</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="norolemodels.jpg">
+                    <span>No Role Modelz
+                        <p>J. Cole</p>
+                    </span>
+                </div>
+                <div class="singer"><p>2014 Forest Hills Drive</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>4:13</p></i></div>
+            </div>
+            <div class="songslist" data-src="2.mp3" id="1" data-title="Revenge" data-artist="XXTENTACTION" data-album-art="x.jpg">
+                <div class="number"><p>2</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="x.jpg">
+                    <span>Revenge
+                        <p>XXTENTACTION</p>
+                    </span>
+                </div>
+                <div class="singer"><p>?</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>2:00</p></i></div>
+            </div>
+            <div class="songslist" data-src="3.mp3" id="2" data-title="Kill Bill" data-artist="SZA" data-album-art="killbill.jpg">
+                <div class="number"><p>3</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="killbill.jpg">
+                    <span>Kill Bill
+                        <p>SZA</p>
+                    </span>
+                </div>
+                <div class="singer"><p>SOS</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>4:13</p></i></div>
+            </div>
+            <div class="songslist" data-src="4.mp3" id="3" data-title="Numb" data-artist="Rihanna, Eminem" data-album-art="riha.jpg">
+                <div class="number"><p>4</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="riha.jpg">
+                    <span>Numb
+                        <p>Rihanna, Eminem</p>
+                    </span>
+                </div>
+                <div class="singer"><p>Unapologetic (Deluxe)</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>4:13</p></i></div>
+            </div>
+            <div class="songslist" data-src="5.mp3" id="4" data-title="FEEL." data-artist="Kendrick Lamar" data-album-art="kdot.jpg">
+                <div class="number"><p>5</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="kdot.jpg">
+                    <span>FEEL.
+                        <p>Kendrick Lamar</p>
+                    </span>
+                </div>
+                <div class="singer"><p>DAMN.</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>3:34</p></i></div>
+            </div>
+            <div class="songslist" data-src="6.mp3" id="5" data-title="Pink + White" data-artist="Frank Ocean" data-album-art="blo.jpg">
+                <div class="number"><p>6</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="blo.jpg">
+                    <span>Pink + White
+                        <p>Frank Ocean</p>
+                    </span>
+                </div>
+                <div class="singer"><p>Blonde</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>3:04</p></i></div>
+            </div>
+            <div class="songslist" data-src="7.mp3" id="6" data-title="Jocelyn Flores" data-artist="XXTENTACTION" data-album-art="x.jpg">
+                <div class="number"><p>7</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="x.jpg">
+                    <span>Jocelyn Flores
+                        <p>XXTENTACTION</p>
+                    </span>
+                </div>
+                <div class="singer"><p>?</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>2:26</p></i></div>
+            </div>
+            <div class="songslist" data-src="8.mp3" id="7" data-title="Fuck Love" data-artist="XXTENTACTION, Trippie Redd" data-album-art="17.jpg">
+                <div class="number"><p>8</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="17.jpg">
+                    <span>Fuck Love
+                        <p>XXTENTACTION, Trippie Redd</p>
+                    </span>
+                </div>
+                <div class="singer"><p>17</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>2:26</p></i></div>
+            </div>
+            <div class="songslist" data-src="9.mp3" id="8" data-title="N95" data-artist="Kendrick Lamar" data-album-art="n95.jpg">
+                <div class="number"><p>9</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="n95.jpg">
+                    <span>N95
+                        <p>Kendrick Lamar</p>
+                    </span>
+                </div>
+                <div class="singer"><p>Mr Morale & The Big Steppers</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>3:16</p></i></div>
+            </div>
+            <div class="songslist" data-src="10.mp3" id="9" data-title="happier than ever" data-artist="Billie Eilish" data-album-art="billie.jpg">
+                <div class="number"><p>10</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="billie.jpg">
+                    <span>happier than ever
+                        <p>Billie Eilish</p>
+                    </span>
+                </div>
+                <div class="singer"><p>happier than ever</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>4:58</p></i></div>
+            </div>
+            <div class="songslist" data-src="11.mp3" id="10" data-title="Off To The Races" data-artist="Lana Del Rey" data-album-art="lana.jpg">
+                <div class="number"><p>11</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="lana.jpg">
+                    <span>Off To The Races
+                        <p>Lana Del Rey</p>
+                    </span>
+                </div>
+                <div class="singer"><p>Born To Die</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>4:59</p></i></div>
+            </div>
+            <div class="songslist" data-src="12.mp3" id="11" data-title="Everybody dies in their nightmares" data-artist="XXTENTACTION" data-album-art="17.jpg">
+                <div class="number"><p>12</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="17.jpg">
+                    <span>everyone dies in their nightma..
+                        <p>XXTENTACTION</p>
+                    </span>
+                </div>
+                <div class="singer"><p>17</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>2:26</p></i></div>
+            </div>
+            <div class="songslist" data-src="13.mp3" id="12" data-title="BAD!" data-artist="XXTENTACTION" data-album-art="17.jpg">
+                <div class="number"><p>13</p>
+                    <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song">
+                    <img src="17.jpg">
+                    <span>BAD!
+                        <p>XXTENTACTION</p>
+                    </span>
+                </div>
+                <div class="singer"><p>17</p></div>
+                <div class="dateadded"><p>Jul 8, 2024</p></div>
+                <div class="time"><p>2:26</p></i></div>
+            </div>
+           
+        
+            
+            <footer></footer>
+        
+            
+        </div>
+    
+       
+<div class="music-player">
+            <div class="album" >
+                <img src="norolemodels.jpg" id="album-art">
+                        <span id="song-title">No Role Modelz
+                            <p class="artist-name">J. Cole</p>
+                        </span>
+                        <i id="heart" class="fa-regular fa-heart"></i>
+                
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="player_icon1.png" class="player-control-icon" id="shuffle">
+                    <img src="player_icon2.png" class="player-control-icon" id="playprev">
+                    <img src="player_icon3.png" class="player-control-icon" id="playbutton" style="opacity: 1; height: 2rem;width: 2rem;">
+                    <img src="player_icon4.png" class="player-control-icon" id="playnext">
+                    <img src="player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time" style="font-size: 0.75rem;">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" id="progressbar">
+                    <span class="tot-time" style="font-size: 0.75rem;">3:32</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="conti">
+                    <span class="material-symbols-outlined small-icon">slideshow </span>
+                    <span class="material-symbols-outlined small-icon">queue_music</span>
+                    <span class="material-symbols-outlined small-icon"> speaker </span>
+                    <input type="range" min="0" max="100" class="conti-vol">
+                    <span class="material-symbols-outlined small-icon ">open_in_new_down </span>
+                    <span class="small-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="script2.js"></script>
+</body>
+</html>
