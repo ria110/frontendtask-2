@@ -18,6 +18,7 @@ let isFirstPlay = true;
 
 function loadSong(songItem) {
     audio.src = songItem.dataset.src;
+    audio.load();
     albumArt.src = songItem.dataset.albumArt;
     songTitle.textContent = songItem.dataset.title;
     artist.textContent = songItem.dataset.artist;
