@@ -235,12 +235,5 @@ heart.addEventListener("click", () => {
         heart.classList.remove('playing');
     }
 });
-function preloadSongs() {
-    songItems.forEach(item => {
-        let audioElement = new Audio();
-        audioElement.src = item.dataset.src;
-        audioElement.preload = 'auto'; 
-    });
-}
-preloadSongs();
+
 
