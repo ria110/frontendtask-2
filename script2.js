@@ -16,6 +16,15 @@ let index = 0;
 let audio = new Audio(songItems[index].dataset.src);
 let isFirstPlay = true;
 
+function preloadSongs() {
+    songItems.forEach(item => {
+        let audioElement = new Audio();
+        audioElement.src = item.dataset.src;
+        audioElement.preload = 'auto';
+    });
+}
+
+preloadSongs();
 function loadSong(songItem) {
     audio.src = songItem.dataset.src;
     audio.load();
